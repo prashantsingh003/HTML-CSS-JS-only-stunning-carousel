@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+}
+:root{
+	--size-font:1vw;
+	font-size: var(--size-font);
+	--net-height:100vh;
+}
+body{
+	position: relative;
+	margin: 0 auto !important;
+	max-width: 1800px;
+	overflow: hidden;
+	font-family: Arial, sans-serif;
+}
+header .brand{
+	font-size: .20em;
+	display: flex;
+	align-items: center;
+	text-decoration: none !important;
+}
+header{
+	position: absolute;
+	top: 0;
+	z-index: 1;
+}
+header img{
+	width: 20em;
+	max-width: 50px;
+	height: auto;
+	aspect-ratio: 1/1;
+	transition-duration: 0.5s;
+}
+header img:hover{
+	scale: 1.1;
+}
+header .links a{
+	padding: 5px !important;
+	font-family: "Lucida Console", Monaco, monospace;
+	text-underline-offset:5px;
+	text-decoration: underline;
+	color: aliceblue !important;
+}
+header .dropdown-menu a{
+	/* color: black !important; */
+	text-decoration: none;
+	text-shadow: -1px 1px 0 #0005, 
+                          1px 1px 0 #0005, 
+                         1px -1px 0 #0005, 
+                        -1px -1px 0 #0005; 
+}
+header .header-container{
+	max-width: 80%;
+	margin: auto;
+}
+#v-slide-1 .la-text{
+	
+	position: relative;
+	top: -13%;
+	left: -9%;
+}
+.la-text{
+	text-transform: uppercase;
+	font-size: 6em;
+	font-weight: 600;
+	line-height: 1;
+}
+.la-text .first{
+	color: #5A636B;
+}
+.la-text .second{
+	color: #414f6b;
+}
+
+/* middle text sections */
+.slide-section{    
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+}
+.carousel-section{
+	width: 100%;
+	height: 12em;
+	background-color:#414F6Bbb;
+	display: flex;
+}
+.carousel-section > #carouselExampleIndicators{
+	width: 80%;
+	margin: auto;
+}
+.carousel-section .carousel-item .img-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.img-container img{
+	padding: 5px;
+	height: auto;
+	width: 18em;
+}
+
+.inner-section{
+	width: 80%;
+	text-align: left;
+}
+.inner-section span.points{
+	font-size: 9em;
+	font-weight: 600;
+  color: rgba(65, 79, 107, 0.502);
+	line-height: 1;
+}.inner-section span.title{
+	font-size: 3em;
+	font-weight: 600;
+  color: rgb(65, 79, 107);
+	text-transform: uppercase;
+}.inner-section span.just-text{
+	font-size: 1.25em;
+}
+#v-slide-2{
+	padding-top: 6em;
+}
+
+.s3-parent-section{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.section-selector{
+	height: 3.5em;
+	background-color: rgb(65, 79, 107);
+	width: 100%;
+}
+.section-selector .btn-container{
+	width: 80%;
+	margin: auto;
+	text-align: start;
+}
+.section-selector .btn-container button{
+	height: 100%;
+	width: 15em;
+	margin: 0;
+	border: none;
+	font-size: 1.25em;
+	text-transform: uppercase;
+	background-color: rgb(65, 79, 107);
+	color:rgb(176, 180, 190);
+}
+.section-selector .btn-container button.active{
+	background-color: rgb(176, 180, 190);
+	color:rgb(65, 79, 107);
+	text-decoration: underline;
+	text-underline-offset:2px;
+}
+.s3-parent-section .content-div{
+	/* flex:1 1 auto; */
+	width: 100%;
+}
+.s3-parent-section .schedule-div{
+	width: 30em;
+	min-height: 10em;
+	background-color: #fff9;
+	text-align: left;
+	padding: 2em;
+
+	position: relative;
+	top: 15%;
+	left: 20%;
+}
+.schedule-div .schedule-title{
+	color: rgb(65, 79, 107);
+	font-weight: 600;
+}
+.schedule-div table{
+	width: 100%;
+	font-size: 1em ;
+}
+.schedule-div table td:last-child{
+	text-align: center;
+}
+.schedule-div table tr.space-bottom td{
+	padding-bottom: 1em;
+}
+.s3-parent-section .s3-footer{
+	height: 3em;
+	width: 100%;
+	background-color: rgb(65, 79, 107);
+}
+
+@media screen and (max-width:900px) {
+	.inner-section span.points{
+		font-size: 9em;
+		font-weight: 600;
+		color: #3468;
+	}
+}
